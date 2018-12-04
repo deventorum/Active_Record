@@ -18,12 +18,10 @@ Store.create(name: 'No', mens_apparel: true, womens_apparel: true, annual_revenu
 Store.create(name: 'Not a very profitable store', mens_apparel: true, womens_apparel: true, annual_revenue: -100_000)
 Store.create(name: 'Clothing store without clothing', mens_apparel: false, womens_apparel: false, annual_revenue: 400_000)
 
-puts new_store.errors.full_messages
+# puts 'Please enter the name of your store'
+# print '> '
+# storeName = $stdin.gets.chomp.to_s
+# puts storeName
+# user_store = Store.create(name: storeName, mens_apparel: true, womens_apparel: true, annual_revenue: rand(1..3000) * 1000)
 
-puts 'Please enter the name of your store'
-print '> '
-storeName = $stdin.gets.chomp.to_s
-puts storeName
-user_store = Store.create(name: storeName, mens_apparel: true, womens_apparel: true, annual_revenue: rand(1..3000) * 1000)
-
-puts user_store.errors.full_messages
+# puts user_store.errors.full_messages
